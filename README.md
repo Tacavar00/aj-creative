@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AJ Creative
+
+**The premium creative network & marketplace.** Founded by Alex Solis (@alexmdc, professional illustrator) and Josh Fathi (Tacavar, tech founder).
+
+> "Where artists thrive" — hire artists, find creative jobs, commission custom artwork.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router, TypeScript)
+- **Styling:** Tailwind CSS v4 with custom design system
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Font:** Inter (Google Fonts)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage — hero, stats, featured jobs/artists, AI protection, app download |
+| `/discover` | Artist directory with skill filtering |
+| `/jobs` | Job board with type/location filters + search |
+| `/feed` | Community feed with posts, sidebar challenges |
+| `/projects` | Project showcase gallery |
+| `/events` | Challenges & events with featured + detail cards |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploying
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Connect the `/home/joshy/aj-creative` repo to Vercel. Set custom domain: `aj.tacavar.com`
 
-## Deploy on Vercel
+Required env vars — see `.env.example` for all vars (Supabase, Stripe, Resend placeholders).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Brand
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Founders:** Alex Solis + Josh Fathi
+- **Location:** Miami, FL
+- **Copyright:** © AJ Creative 2026
+- **Accent palette:** Violet #7C3AED → Blue #2563EB → Pink #DB2777
